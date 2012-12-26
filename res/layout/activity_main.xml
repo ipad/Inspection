@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+    <DigitalClock 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+    />
+    
+    <LinearLayout
+     android:orientation="horizontal"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center"
+     >
+     
+             <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+             >
+                        
+                <ImageButton
+                    android:id="@+id/intro_btn"       
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_launcher"
+                 />
+                
+               <TextView  
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:text="@string/introduce"
+              />
+                
+                <ImageButton
+                    android:id="@+id/parasetting_btn"       
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_launcher"
+                 />
+                
+               <TextView  
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:text="@string/para_setting"
+              />
+                                
+                <ImageButton
+                    android:id="@+id/manage_btn"       
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_launcher"
+                 />
+                
+               <TextView  
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:text="@string/report_manage"
+              />
+             </LinearLayout>
+             
+             <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="100dp"
+                        >
+                        
+                <ImageButton
+                    android:id="@+id/syssetting_btn"       
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_launcher"
+                 />
+                
+               <TextView  
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:text="@string/sys_setting"
+              />                
+                
+                <ImageButton
+                    android:id="@+id/demo_test_btn"       
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_launcher"
+                 />
+
+               <TextView  
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:text="@string/demo_test"
+              />                
+                <ImageButton
+                    android:id="@+id/power_off_btn"       
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_launcher"
+                 />
+               <TextView  
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:text="@string/power_off"
+              />                
+             </LinearLayout>
+             
+        
+             <LinearLayout 
+                         android:orientation="vertical"
+                         android:layout_width="wrap_content"
+                         android:layout_height="fill_parent"
+                         android:gravity="center"
+                         android:paddingLeft="200dp"
+             >
+             <ImageView
+              android:id="@+id/log_img"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:src="@drawable/ic_launcher"
+              android:contentDescription="@string/company_name_en"
+              android:layout_gravity="center"
+             />
+             <TextView  
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:text="@string/company_name_cn"
+               android:layout_gravity="center"
+             />
+             <TextView  
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:text="@string/company_name_en"
+               android:layout_gravity="center"
+              />
+		
+</LinearLayout>
+             
+            
+    </LinearLayout>
+        
+</LinearLayout>

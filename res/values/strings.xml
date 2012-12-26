@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inspetion</string>
+    <string name="product_code">TMYQ-905</string>
+    <string name="product_name">动物疾病快速诊断分析仪</string>
+    <string name="menu_settings">Settings</string>
+    <string name="company_name_en">TIANMAI BIO.TECH</string>
+    <string name="company_name_cn">天迈生物</string>
+    <string name="info_kaijizijian">开机自检</string>
+    <string name="introduce">仪器简介</string>
+    <string name="para_setting">参数设置</string>
+    <string name="report_manage">报告管理</string>
+    <string name="sys_setting">系统设置</string>
+    <string name="demo_test">样本测试</string>
+    <string name="power_off">关机</string>
+    <string name="info_return">返回</string>
+    <string name="intro_detail">仪器简介\r\nTMYQ-912食品安全综合分析仪为杭州天迈生物科技有限公司根据食品安全问题的特点,通过先进的科学技术,采取国内领先
+          的检测技术,安全，有效的检测近年来食品安全问题中一些爆发范围广,影响大,受害人群集中的检测项目，对重大食品安全问题进行有效的检测和预防\n地址：杭州市滨江
+          区滨安路688号天和高科技产业园B栋3楼\n电话:0571-88307795 88301236 88307762\n传真:0571-88307765                              
+    </string>
+</resources>
