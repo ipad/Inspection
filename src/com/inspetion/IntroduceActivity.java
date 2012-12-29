@@ -22,6 +22,7 @@ public class IntroduceActivity extends Activity {
 			@Override
 			public void run() {
 				startActivity(intent);
+				//test commit.
 			}
     };
     timer.schedule(task, 3000);
