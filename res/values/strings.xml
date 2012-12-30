@@ -19,4 +19,12 @@
           的检测技术,安全，有效的检测近年来食品安全问题中一些爆发范围广,影响大,受害人群集中的检测项目，对重大食品安全问题进行有效的检测和预防\n地址：杭州市滨江
           区滨安路688号天和高科技产业园B栋3楼\n电话:0571-88307795 88301236 88307762\n传真:0571-88307765                              
     </string>
+    <string name="update_item">更新项目</string>
+    <string name="sepecimen">样本</string>
+    <string name="blank">空白</string>
+    <string name="delete">删除</string>
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="print">打印</string>
+    <string name="back">返回</string>
 </resources>

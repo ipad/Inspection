@@ -33,6 +33,10 @@
         <activity
             android:name="com.inspetion.DeviceIntroDetailActivity">
         </activity>
+        
+        <activity
+            android:name="com.inspetion.SpecimenDetectActivity">
+        </activity>
     </application>
 
 </manifest>

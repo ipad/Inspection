@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends Activity {
     private ImageButton introImageBtn;
+    private ImageButton sepecimenImageBtn;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,20 @@ public class MainActivity extends Activity {
 			}
         	
         });
+        
+		{//this Intent is use to launch specimen Activity.
+			final Intent specimenDetectIntent = new Intent(this,
+					SpecimenDetectActivity.class);
+			sepecimenImageBtn = (ImageButton)findViewById(R.id.demo_test_btn);
+			sepecimenImageBtn.setOnClickListener(new ImageButton.OnClickListener(){
+
+				@Override
+				public void onClick(View v) {
+					startActivity(specimenDetectIntent);
+				}
+			
+			});
+		}
     }
     
 }

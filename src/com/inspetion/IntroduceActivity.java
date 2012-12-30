@@ -10,21 +10,21 @@ import android.view.Menu;
 
 public class IntroduceActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_introduce);
-        
-        final Intent intent = new Intent(this,KaiJiZiJianActivity.class);
-        
-        Timer timer = new Timer();
-        TimerTask task = new TimerTask(){
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_introduce);
+
+		final Intent intent = new Intent(this, KaiJiZiJianActivity.class);
+
+		Timer timer = new Timer();
+		TimerTask task = new TimerTask() {
 			@Override
 			public void run() {
 				startActivity(intent);
-				//test commit.
+				// test commit.
 			}
-    };
-    timer.schedule(task, 3000);
-    } 
+		};
+		timer.schedule(task, 3000);
+	}
 }
