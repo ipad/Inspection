@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/specimen_control_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        layout="@layout/specimen_control_top" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/specimen_table" />
+
+    <include
+        android:id="@+id/specimen_control_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        layout="@layout/specimen_control_bottom" />
+
+</LinearLayout>
