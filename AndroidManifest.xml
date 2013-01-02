@@ -37,6 +37,10 @@
         <activity
             android:name="com.inspetion.SpecimenDetectActivity">
         </activity>
+        
+        <activity
+            android:name="com.inspetion.SysSettingActivity">
+        </activity>
     </application>
 
 </manifest>
