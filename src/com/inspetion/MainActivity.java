@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 public class MainActivity extends Activity {
     private ImageButton introImageBtn;
     private ImageButton sepecimenImageBtn;
+    private ImageButton preferImageBtn;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,18 @@ public class MainActivity extends Activity {
 					startActivity(specimenDetectIntent);
 				}
 			
+			});
+		}
+		{//Launch Preferences activity
+			final Intent preferencesIntent = new Intent(this,CategoryTestingActivity.class);
+			preferImageBtn = (ImageButton)findViewById(R.id.parasetting_btn);
+			preferImageBtn.setOnClickListener(new ImageButton.OnClickListener(){
+
+				@Override
+				public void onClick(View v) {
+					startActivity(preferencesIntent);
+				}
+				
 			});
 		}
     }

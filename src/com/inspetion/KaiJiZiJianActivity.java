@@ -21,6 +21,10 @@ public class KaiJiZiJianActivity extends Activity {
 	   final Intent intent = new Intent(this,MainActivity.class);
 	   
 	// Start lengthy operation in a background thread
+	   
+	   //will be back(open notation.)
+	   startActivity(intent);
+	   /*
        new Thread(new Runnable() {
            public void run() {
                while (mProgressStatus < 100) {
@@ -46,5 +50,7 @@ public class KaiJiZiJianActivity extends Activity {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		*/
 	}
+	
 }

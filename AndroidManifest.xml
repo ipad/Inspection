@@ -41,6 +41,17 @@
         <activity
             android:name="com.inspetion.SysSettingActivity">
         </activity>
-    </application>
 
-</manifest>
+        <activity
+            android:name="com.inspetion.CategoryTestingActivity">
+        </activity>
+        
+        <activity
+            android:name="com.inspetion.LightAbsorptanceActivity">
+        </activity>
+        
+        <activity
+            android:name="com.inspetion.StandardTestingActivity">
+        </activity>
+    </application>
+</manifest>
