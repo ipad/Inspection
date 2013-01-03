@@ -27,4 +27,18 @@ public class CategoryTestingActivity extends Activity {
 				StandardTestingActivity.class);
 		startActivity(standardIntent);
 	}
+
+	public void startParamSetting(View v) {
+
+		final Intent paraSettingIntent = new Intent(this,
+				CategoryParamSettingActivity.class);
+		startActivity(paraSettingIntent);
+
+	}
+
+	public void back(View v) {
+		final Intent backIntent = new Intent(this, MainActivity.class);
+		startActivity(backIntent);
+	}
+
 }

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/category_item_label"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/test_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/kqslv"
+            android:textSize="6pt" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="30dp"
+                android:text="@string/target_pool_account" />
+
+            <EditText
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:gravity="right"
+                android:text="@string/dilute_times" />
+
+            <EditText
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <View
+                android:layout_height="20dip"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/param_abs" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|bottom"
+                android:text="@string/param_density" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/param_e" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/param_b" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/param_s1" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/param_s2" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/param_s3" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/param_s4" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:inputType="number" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

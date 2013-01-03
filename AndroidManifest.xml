@@ -53,5 +53,9 @@
         <activity
             android:name="com.inspetion.StandardTestingActivity">
         </activity>
+        
+        <activity
+            android:name="com.inspetion.CategoryParamSettingActivity">
+        </activity>
     </application>
 </manifest>
