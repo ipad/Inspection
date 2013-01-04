@@ -10,6 +10,7 @@ public class MainActivity extends Activity {
     private ImageButton introImageBtn;
     private ImageButton sepecimenImageBtn;
     private ImageButton preferImageBtn;
+    private ImageButton sysSettingImageBtn;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,19 @@ public class MainActivity extends Activity {
 				@Override
 				public void onClick(View v) {
 					startActivity(preferencesIntent);
+				}
+				
+			});
+		}
+		
+		{//launch system setting activity
+			final Intent sysSettingIntent = new Intent(this,SysSettingActivity.class);
+			sysSettingImageBtn = (ImageButton)findViewById(R.id.syssetting_btn);
+			sysSettingImageBtn.setOnClickListener(new ImageButton.OnClickListener(){
+
+				@Override
+				public void onClick(View v) {
+					startActivity(sysSettingIntent);
 				}
 				
 			});
