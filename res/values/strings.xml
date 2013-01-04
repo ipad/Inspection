@@ -59,4 +59,6 @@
     <string name="kb_char_pre">&#060;-</string>
     <string name="kb_char_next">-&#062;</string>
     <string name="kb_char_ok">OK</string>
+    <string name="date">日期:</string>
+    <string name="time">时间:</string>
 </resources>
