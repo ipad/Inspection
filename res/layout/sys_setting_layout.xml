@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical" >
     
     <TextView android:layout_width="wrap_content"
@@ -16,11 +16,53 @@
     
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
               android:text="@string/date"/>
     
     <DatePicker android:id="@+id/dp1"
               android:layout_width="wrap_content"
+              android:calendarViewShown="false"
               android:layout_height="wrap_content"/>
+    
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:text="@string/time"/>
+    
+    <TimePicker android:id="@+id/tp1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+    
+    </LinearLayout>
+    
+    
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/pallet_move_setting"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:text="@string/buban_direction"/>
+    
+    <RadioGroup android:id="@+id/buban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:checkedButton="@+id/landscape">
+                
+        <RadioButton android:id="@+id/landscape"
+                     android:text="@string/orientation"/>
+
+        <RadioButton android:id="@+id/vert"
+                     android:text="@string/vertical"/>
+    </RadioGroup>
+    
     </LinearLayout>
     
     <LinearLayout
@@ -30,10 +72,63 @@
     
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="@string/time"/>
+              android:layout_gravity="center_vertical"
+              android:text="@string/jinban_mode"/>
     
-    <TimePicker android:id="@+id/tp1"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"/>
+    <RadioGroup android:id="@+id/jinban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:checkedButton="@+id/lx">
+                
+        <RadioButton android:id="@+id/lx"
+                     android:text="@string/lianxu"/>
+
+        <RadioButton android:id="@+id/bj"
+                     android:text="@string/bujin"/>
+    </RadioGroup>
+    
     </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:text="@string/zhenban_speed"/>
+    
+    <Spinner android:id="@+id/znSpeed"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:entries="@array/zb_speed"/>
+   
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+    >
+    
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:text="@string/zhenban_time"/>
+    
+    <Spinner android:id="@+id/znTime"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:entries="@array/zb_time"/>
+    
+    </LinearLayout>
+    
+    <Button 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/sysSettingReturnBtn"
+    android:layout_gravity="right"
+    android:text="@string/info_return"/>
 </LinearLayout>

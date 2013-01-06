@@ -61,4 +61,27 @@
     <string name="kb_char_ok">OK</string>
     <string name="date">日期:</string>
     <string name="time">时间:</string>
+    <string name="pallet_move_setting">样品盘运动方式设置</string>
+    <string name="buban_direction">布板方向</string>
+    <string name="orientation">横向</string>
+    <string name="vertical">纵向</string>
+    <string name="jinban_mode">进板方式</string>
+    <string name="lianxu">连续</string>
+    <string name="bujin">布进</string>
+    <string name="zhenban_speed">振板速度</string>
+    <string name="zhenban_time">振板时间</string>
+    
+    <string-array name="zb_speed">
+        <item>不振板</item>
+        <item>慢振板</item>
+        <item>中振板</item>
+        <item>快振板</item>
+    </string-array>
+    
+    <string-array name="zb_time">
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>20s</item>
+    </string-array>
 </resources>
