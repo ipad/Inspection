@@ -64,6 +64,19 @@ public class MainActivity extends Activity {
 				
 			});
 		}
+
+		{//launch reporting activity
+			final Intent reportIntent = new Intent(this,ReportActivity.class);
+			ImageButton reportButton = (ImageButton)findViewById(R.id.manage_btn);
+			reportButton.setOnClickListener(new ImageButton.OnClickListener(){
+
+				@Override
+				public void onClick(View v) {
+					startActivity(reportIntent);
+				}
+				
+			});
+		}
     }
     
 }

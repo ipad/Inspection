@@ -43,7 +43,7 @@
         </activity>
 
         <activity
-            android:name="com.inspetion.CategoryTestingActivity">
+            android:name="com.inspetion.CategoryTestingActivity" android:screenOrientation="landscape">
         </activity>
         
         <activity
@@ -56,6 +56,10 @@
         
         <activity
             android:name="com.inspetion.CategoryParamSettingActivity" android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.inspetion.ReportActivity" android:screenOrientation="landscape">
         </activity>
     </application>
 </manifest>

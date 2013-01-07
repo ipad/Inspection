@@ -84,4 +84,14 @@
         <item>15s</item>
         <item>20s</item>
     </string-array>
+    <string name="report_manager">报告管理</string>
+    <string name="report_specimen_no">样品号</string>
+    <string name="testing_item">检测项目</string>
+    <string name="light_absorptance">吸光度</string>
+    <string name="ration_result">定量结果</string>
+    <string name="ref_standard">参考标准</string>
+    <string name="datetime">日期</string>
+    <string name="qualitative_result">定性结果</string>
+    <string name="edit">编辑</string>
+    <string name="clear">清除</string>
 </resources>

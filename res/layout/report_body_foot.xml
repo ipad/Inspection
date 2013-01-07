@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/edit"
+        android:textSize="6pt" >
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/delete"
+        android:textSize="6pt" >
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/clear"
+        android:textSize="6pt" >
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/print"
+        android:textSize="6pt" >
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/back"
+        android:textSize="6pt" >
+    </Button>
+
+</LinearLayout>
