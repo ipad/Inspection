@@ -14,7 +14,7 @@
  * limitations under the License. 
  */
 
-package com.inspetion.serialport;
+package android_serialport_api;
 
 import java.io.File;
 import java.io.FileReader;
@@ -23,9 +23,8 @@ import java.io.LineNumberReader;
 import java.util.Iterator;
 import java.util.Vector;
 
-import com.inspetion.serialport.log.SLog;
-
 import android.util.Log;
+import android_serialport_api.log.SLog;
 
 public class SerialPortFinder {
 

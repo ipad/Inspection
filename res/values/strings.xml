@@ -8,6 +8,7 @@
     <string name="company_name_en">TIANMAI BIO.TECH</string>
     <string name="company_name_cn">天迈生物</string>
     <string name="info_kaijizijian">开机自检</string>
+    <string name="error_kaijizijian">自检错误，请联系厂家</string>    
     <string name="introduce">仪器简介</string>
     <string name="para_setting">参数设置</string>
     <string name="report_manage">报告管理</string>

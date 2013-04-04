@@ -14,7 +14,7 @@
  * limitations under the License. 
  */
 
-package com.inspetion.serialport;
+package android_serialport_api;
 
 import java.io.File;
 import java.io.FileDescriptor;
@@ -24,9 +24,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.inspetion.serialport.log.SLog;
 
 import android.util.Log;
+import android_serialport_api.log.SLog;
 
 public class SerialPort {
 
@@ -38,6 +38,47 @@ public class SerialPort {
 	private FileDescriptor mFd;
 	private FileInputStream mFileInputStream;
 	private FileOutputStream mFileOutputStream;
+	
+//	public  class ReadTimeOutThread extends Thread {
+//		public long timeOut; 
+//		public long iniTime;
+//		public String response;
+//		
+//		public ReadTimeOutThread(long time){
+//			timeOut = time;
+//			iniTime = System.currentTimeMillis();
+//		}
+//		
+//		@Override
+//		public void run() {
+//			super.run();
+//			while(!isInterrupted() && ((System.currentTimeMillis() - iniTime)) < timeOut ) {
+//				Log.i(TAG, "ReadTimeOutThread:"+Long.toString(System.currentTimeMillis() - iniTime));
+//				Log.i(TAG, "isInterrupted:"+isInterrupted());
+//				Log.i(TAG, "mFileInputStream == null?"+(mFileInputStream == null));
+//				int size;
+//				try {
+//					byte[] buffer = new byte[64];
+//					if (mFileInputStream == null) return;
+//					size = mFileInputStream.read(buffer);
+//					if (size > 0) {
+//						response = new String(buffer, 0, size);
+//						Log.i(TAG, "received:"+response);
+//						SLog.printToFile("Received:"+response);
+//						return;
+//					}
+//				} catch (IOException e) {
+//					Log.i(TAG, "exception:"+e.getMessage());
+//					e.printStackTrace();
+//					return;
+//				}
+//			}
+//		}
+//		
+//		public String getResponse(){
+//			return response;
+//		}
+//	}
 
 	public SerialPort(File device, int baudrate, int flags) throws SecurityException, IOException {
 
@@ -79,6 +120,31 @@ public class SerialPort {
 	public OutputStream getOutputStream() {
 		return mFileOutputStream;
 	}
+	
+//	public boolean send(String cmd){
+//		try {
+//			SLog.printToFile("Send:"+cmd);
+//			mFileOutputStream.write(cmd.getBytes());
+//			mFileOutputStream.write('\n');
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//		
+//		return true;
+//	}
+	
+//	public String receive(long time){
+//		
+//		ReadTimeOutThread readThread = new ReadTimeOutThread(time);
+//		readThread.start();
+//		try {
+//			readThread.join();
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//		
+//		return readThread.getResponse();
+//	}
 
 	// JNI
 	private native static FileDescriptor open(String path, int baudrate, int flags);
