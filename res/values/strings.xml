@@ -8,7 +8,7 @@
     <string name="company_name_en">TIANMAI BIO.TECH</string>
     <string name="company_name_cn">天迈生物</string>
     <string name="info_kaijizijian">开机自检</string>
-    <string name="error_kaijizijian">自检错误，请联系厂家</string>    
+    <string name="error_kaijizijian">自检错误，请联系厂家</string>
     <string name="introduce">仪器简介</string>
     <string name="para_setting">参数设置</string>
     <string name="report_manage">报告管理</string>
@@ -18,8 +18,7 @@
     <string name="info_return">返回</string>
     <string name="intro_detail">仪器简介\r\nTMYQ-912食品安全综合分析仪为杭州天迈生物科技有限公司根据食品安全问题的特点,通过先进的科学技术,采取国内领先
           的检测技术,安全，有效的检测近年来食品安全问题中一些爆发范围广,影响大,受害人群集中的检测项目，对重大食品安全问题进行有效的检测和预防\n地址：杭州市滨江
-          区滨安路688号天和高科技产业园B栋3楼\n电话:0571-88307795 88301236 88307762\n传真:0571-88307765                              
-    </string>
+          区滨安路688号天和高科技产业园B栋3楼\n电话:0571-88307795 88301236 88307762\n传真:0571-88307765                              </string>
     <string name="update_item">更新项目</string>
     <string name="sepecimen">样本</string>
     <string name="blank">空白</string>
@@ -55,7 +54,18 @@
     <string name="kb_char_7">7</string>
     <string name="kb_char_8">8</string>
     <string name="kb_char_9">9</string>
+    <string name="kb_char_10">10</string>
+    <string name="kb_char_11">11</string>
+    <string name="kb_char_12">12</string>
     <string name="kb_char_del">DEL</string>
+    <string name="kb_char_A">A</string>
+    <string name="kb_char_B">B</string>
+    <string name="kb_char_C">C</string>
+    <string name="kb_char_D">D</string>
+    <string name="kb_char_E">E</string>
+    <string name="kb_char_F">F</string>
+    <string name="kb_char_G">G</string>
+    <string name="kb_char_H">H</string>
     <string name="kb_char_dot">.</string>
     <string name="kb_char_pre">&#060;-</string>
     <string name="kb_char_next">-&#062;</string>
@@ -71,20 +81,20 @@
     <string name="bujin">布进</string>
     <string name="zhenban_speed">振板速度</string>
     <string name="zhenban_time">振板时间</string>
-    
+
     <string-array name="zb_speed">
         <item>不振板</item>
         <item>慢振板</item>
         <item>中振板</item>
         <item>快振板</item>
     </string-array>
-    
     <string-array name="zb_time">
         <item>5s</item>
         <item>10s</item>
         <item>15s</item>
         <item>20s</item>
     </string-array>
+
     <string name="report_manager">报告管理</string>
     <string name="report_specimen_no">样品号</string>
     <string name="testing_item">检测项目</string>
@@ -95,4 +105,5 @@
     <string name="qualitative_result">定性结果</string>
     <string name="edit">编辑</string>
     <string name="clear">清除</string>
+
 </resources>
