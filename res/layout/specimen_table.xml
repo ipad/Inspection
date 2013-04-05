@@ -1,71 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/specimen_table"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/table_border"
+    android:orientation="vertical"
+    android:padding="5dp" >
 
-    <TableLayout
-        android:id="@+id/specimen_table"
+    <include
+        android:id="@+id/tableRow0"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:stretchColumns="1,2,3,4,5,6,7,8,9,10,11,12"
-        android:shrinkColumns="1,2,3,4,5,6,7,8,9,10,11,12"
-        android:background="#343434" >
+        android:layout_height="25dp"
+        android:layout_margin="-10dp"
+        layout="@layout/specimen_tableheader"
+        android:padding="-10dp" />
 
-        <include
-            android:id="@+id/tableRow0"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:padding="-10dp"
-            android:layout_margin="-10dp"
-            layout="@layout/specimen_tablerow" />
+    <include
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/specimen_tablerow" />
 
-        <include
-            android:id="@+id/tableRow1"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            layout="@layout/specimen_tablerow" />
+    <include
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/specimen_tablerow"
+        android:background="#0000ff" />
 
-        <include
-            android:id="@+id/tableRow2"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            layout="@layout/specimen_tablerow" />
+    <include
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/specimen_tablerow" />
 
-        <include
-            android:id="@+id/tableRow3"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            layout="@layout/specimen_tablerow" />
+    <include
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/specimen_tablerow" />
 
-        <include
-            android:id="@+id/tableRow4"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            layout="@layout/specimen_tablerow" />
+    <include
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/specimen_tablerow" />
 
-        <include
-            android:id="@+id/tableRow5"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            layout="@layout/specimen_tablerow" />
+    <include
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/specimen_tablerow" />
 
-        <include
-            android:id="@+id/tableRow6"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            layout="@layout/specimen_tablerow" />
+    <include
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/specimen_tablerow" />
 
-        <include
-            android:id="@+id/tableRow7"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            layout="@layout/specimen_tablerow" />
+    <include
+        android:id="@+id/tableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/specimen_tablerow" />
 
-        <include
-            android:id="@+id/tableRow8"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            layout="@layout/specimen_tablerow" />
-    </TableLayout>
-</ScrollView>
+</LinearLayout>
