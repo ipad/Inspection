@@ -10,7 +10,7 @@
         android:layout_alignParentRight="true"
         android:paddingRight="10dp"
         android:text="@string/back" 
-        android:onClick="back"/>
+        android:onClick="whenClickBackBtn"/>
 
     <Button
         android:id="@+id/print_button"

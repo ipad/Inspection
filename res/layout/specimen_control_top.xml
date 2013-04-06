@@ -16,19 +16,37 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/update_item" />
+        
+        <TextView
+           android:id="@+id/item_name"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+         />
+        
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
+        
+       <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:onClick="whenClickClearBtn"
+            android:text="@string/clear" />
 
         <Button
             android:id="@+id/delete_button"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
             android:paddingRight="10dp"
+            android:onClick="whenClickDeleteBtn"
+            android:layout_toLeftOf="@id/clear_button"
             android:text="@string/delete" />
 
         <Button
@@ -36,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toLeftOf="@id/delete_button"
+            android:onClick="whenClickBlankBtn"
             android:paddingRight="10dp"
             android:text="@string/blank" />
 
@@ -44,6 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:paddingRight="10dp"
+            android:onClick="whenClickSpicemenBtn"
             android:layout_toLeftOf="@id/blank_button"
             android:text="@string/sepecimen" />
     </RelativeLayout>
