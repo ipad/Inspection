@@ -40,6 +40,7 @@
         android:layout_height="30dp"
         android:layout_marginLeft="20dp"
         android:text="@string/back"
+        
         android:textSize="6pt" >
     </Button>
 

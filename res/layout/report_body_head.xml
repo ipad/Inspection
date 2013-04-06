@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:background="#808080"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="@string/report_specimen_no" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="@string/testing_item" />
+
+    <TextView
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="@string/light_absorptance" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="@string/ration_result" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="@string/ref_standard" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="@string/datetime" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="@string/qualitative_result" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:text="@string/qualitative_result" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:text="@string/qualitative_result" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:text="@string/qualitative_result" />
+
+</LinearLayout>
