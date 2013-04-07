@@ -72,17 +72,17 @@ public class SysSettingActivity extends Activity {
             	save("sys_setting","min",timePicker.getCurrentMinute());
             	
             	if (bubanRG.getCheckedRadioButtonId() == landscapeRB.getId())
-            	   save("sys_setting","buban",1);
+            	   save("sys_setting","buban","01");
             	else if (bubanRG.getCheckedRadioButtonId() == vertcapeRB.getId())
-            	   save("sys_setting","buban",2);
+            	   save("sys_setting","buban","02");
             	
             	if (jinbanRG.getCheckedRadioButtonId() == lxRB.getId())
-             	   save("sys_setting","jinban",1);
+             	   save("sys_setting","jinban","01");
              	else if (bubanRG.getCheckedRadioButtonId() == vertcapeRB.getId())
-             	   save("sys_setting","jinban",2);
+             	   save("sys_setting","jinban","02");
             	
-            	save("sys_setting","zb_speed",zbSpeedSpinner.getSelectedItemPosition()+1);
-            	save("sys_setting","zb_time",zbTimeSpinner.getSelectedItemPosition()+1);
+            	save("sys_setting","zb_speed","0"+(zbSpeedSpinner.getSelectedItemPosition()+1));
+            	save("sys_setting","zb_time","0"+(zbTimeSpinner.getSelectedItemPosition()+1));
 				
 				final Intent intent = new Intent(currentObj,MainActivity.class);
 				startActivity(intent);
@@ -104,9 +104,9 @@ public class SysSettingActivity extends Activity {
             @Override 
             public void onCheckedChanged(RadioGroup group, int checkedId) { 
                 if(checkedId==lxRB.getId()){ 
-                	save("sys_setting","jinban",1);
+                	save("sys_setting","jinban","01");
                 }else if(checkedId==bjRB.getId()){ 
-                	save("sys_setting","jinban",2);
+                	save("sys_setting","jinban","02");
                 } 
             } 
         }); 	
@@ -118,9 +118,9 @@ public class SysSettingActivity extends Activity {
 	            @Override 
 	            public void onCheckedChanged(RadioGroup group, int checkedId) { 
 	                if(checkedId==landscapeRB.getId()){ 
-	                	save("sys_setting","buban",1);
+	                	save("sys_setting","buban","01");
 	                }else if(checkedId==vertcapeRB.getId()){ 
-	                	save("sys_setting","buban",2);
+	                	save("sys_setting","buban","02");
 	                } 
 	            } 
 	        }); 		
@@ -156,6 +156,11 @@ public class SysSettingActivity extends Activity {
         });
 	}
 	
+	public void save(String prefName,String key,String value){
+        SharedPreferences userInfo = getSharedPreferences(prefName, 0);  
+        userInfo.edit().putString(key,value ).commit(); 
+	}
+	
 	public void save(String prefName,String key,int value){
         SharedPreferences userInfo = getSharedPreferences(prefName, 0);  
         userInfo.edit().putInt(key,value ).commit(); 
@@ -166,7 +171,7 @@ public class SysSettingActivity extends Activity {
 
 		@Override
 		public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
-			save("sys_setting","zb_speed",(arg2+1));		
+			save("sys_setting","zb_speed","0"+(arg2+1));		
 		}
 
 		@Override
@@ -181,7 +186,7 @@ public class SysSettingActivity extends Activity {
 
 		@Override
 		public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
-			save("sys_setting","zb_time",(arg2+1));		
+			save("sys_setting","zb_time","0"+(arg2+1));		
 		}
 
 		@Override

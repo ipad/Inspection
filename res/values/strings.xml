@@ -27,6 +27,7 @@
     <string name="stop">停止</string>
     <string name="print">打印</string>
     <string name="back">返回</string>
+    <string name="testing">检测中</string>
     <string name="light_absorptance_testing">测吸光度</string>
     <string name="standard_testing">测标准</string>
     <string name="confirm">确定</string>

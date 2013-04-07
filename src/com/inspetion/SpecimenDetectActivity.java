@@ -1,5 +1,9 @@
 package com.inspetion;
 
+import com.inspetion.Entities.Command;
+import com.inspetion.Entities.StartCommand;
+import com.inspetion.util.Tools;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -15,14 +19,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android_serialport_api.sample.SerialPortActivity;
 
 /**
 *
 * @author ihzj Ñù±¾¼à²â Activity
 *
 */
-public class SpecimenDetectActivity extends Activity {
-
+public class SpecimenDetectActivity extends SerialPortActivity {
+    private Button startBtn;
 	private Button updateItemBtn;
 	private TextView itemNameTV;
 	private Button backBtn;
@@ -57,11 +62,50 @@ public class SpecimenDetectActivity extends Activity {
         blankBtn =  (Button)findViewById(R.id.blank_button);
         specimenBtn = (Button)findViewById(R.id.sepecimen_button);
         deleteBtn = (Button)findViewById(R.id.delete_button);
+        startBtn = (Button)findViewById(R.id.start_button);
+        
         DEFAULT_COLOR = backBtn.getBackground();
         
         initFistCol();
                 
         whenClickUpdateItemBtn();
+    }
+    
+    public void  whenClickStartBtn(View view){    	
+    	startBtn.setClickable(false);
+    	startBtn.setTextColor(Color.GREEN);		
+    	startBtn.setText(R.string.testing);
+    	
+    	Command startCommand = Tools.getCommandFromXML(getFilesDir(),"startTesting");
+    	String d1,d2,d3,d4;
+    	int i1,i2,i3,i4;
+    	
+    	d1 = getSharedPreferences("sys_setting", 0).getString("buban", "01");
+    	d2 = getSharedPreferences("sys_setting", 0).getString("jinban", "01");
+    	d3 = getSharedPreferences("sys_setting", 0).getString("zb_speed", "01");
+    	d4 = getSharedPreferences("sys_setting", 0).getString("zb_time", "01");
+    	
+    	startCommand.setData(d1+" "+d2+" "+d3+" "+d4+" ") ;
+    	startCommand.calulateCheckSum();
+    	
+		int sum1,sum2,sum3,sum4,sum5,sum6;
+		
+				
+		sum1 = Integer.parseInt(startCommand.getId());
+		sum2 = Integer.parseInt(startCommand.getLength());
+		sum3 = Integer.parseInt(startCommand.getData().split(" ")[0]);
+		sum4 = Integer.parseInt(startCommand.getData().split(" ")[1]);
+		sum5 = Integer.parseInt(startCommand.getData().split(" ")[2]);
+		sum6 = Integer.parseInt(startCommand.getData().split(" ")[3]);
+		
+		
+		String hex = Integer.toHexString(sum1+sum2+sum3+sum4+sum5+sum6);
+	    if (hex.length() == 1) {
+		        hex = "0" + hex;
+		}
+	    Log.d(TAG, "checksum:"+hex);
+	    startCommand.setCheckSum(hex);
+	    send(startCommand.getStart()+" "+startCommand.getId()+" "+startCommand.getLength()+" "+startCommand.getData()+startCommand.getCheckSum()+" "+startCommand.getEnd());
     }
     
     public void whenClickBackBtn(View v){
@@ -302,4 +346,10 @@ public class SpecimenDetectActivity extends Activity {
 			}
 		}
     }
+
+	@Override
+	protected void onDataReceived(byte[] buffer, int size) {
+		// TODO Auto-generated method stub
+		
+	}
 }

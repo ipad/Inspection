@@ -33,6 +33,7 @@
         android:layout_height="match_parent"
         android:layout_toLeftOf="@id/stop_button"
         android:paddingRight="10dp"
-        android:text="@string/start" />
+        android:text="@string/start" 
+        android:onClick="whenClickStartBtn"/>
 
 </RelativeLayout>
